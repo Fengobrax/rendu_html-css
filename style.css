@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.index {
+  background-color: rgb(255, 0, 0);
+  background-image: url("images/fond_grace.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-family: "Courier New";
+  text-align: center;
+  font-variant: small-caps;
+  text-shadow: 5px 5px 5px rgb(173, 3, 3);
+}
+
+h2 {
+  font-size: 2.5em;
+  font-family: "Special Elite", system-ui;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(137, 7, 7);
+  text-shadow: 5px 5px 5px rgb(226, 226, 226);
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: "Special Elite", system-ui;
+  text-align: center;
+}
+
+.p_index {
+  font-size: 1.7em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.485);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  margin: 60px;
+  box-shadow: 10px 10px 15px black;
+
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wiki {
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+}
+
+.fandom{
+  width: 300px;
+  height: 150px;
+  margin: 30px;
+}
+
+.hyperlink {
+  color: rgb(249, 8, 8);
+  text-decoration: solid;
+}
+
+.bouton {
+  margin: 100px;
+  border: 4px solid white;
+  border-radius: 10px;
+  background-color: rgb(5, 5, 5);
+  width: 400px;
+  height: 100px;
+  text-align: center;
+}
+
+.bouton a {
+  color: white;
+  text-decoration: solid;
+  font-size: 2em;
+  font-family: cursive;
+}
+
+.bouton:hover {
+  border: 4px solid rgb(0, 0, 0);
+  background-color: white;
+  a {
+    color: black;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.timeline {
+  background-color: rgb(140, 1, 1);
+  background-image: url("images/fond_site.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.commencement {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  background-image: url("images/adn1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 24px;
+  padding: 15px;
+  border: 4px solid white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px black;
+  margin-bottom: 30px;
+}
+
+.nouvel_ere {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  background-image: url("images/virus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 40px;
+  padding: 15px;
+  border: 4px solid white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px black;
+  margin-bottom: 30px;
+}
+
+.epoque_moderne {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  background-image: url("images/adn2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 24px;
+  padding: 15px;
+  border: 4px solid white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px black;
+  margin-bottom: 30px;
+}
+
+.RE0 {
+  background-image: url(images/RE0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-72) / 4);
+  border: 4px solid rgb(245, 243, 243);
+  transition: 0.3s;
+}
+
+.RE0 p {
+  opacity: 0;
+  transition: 0.3s;
+
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE0:hover p {
+  opacity: 1;
+}
+.RE0:hover {
+  border: 0px;
+}
+
+.RE1 {
+  background-image: url(images/RE1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-72) / 4);
+  border: 4px solid rgb(250, 248, 248);
+  transition: 0.3s;
+}
+
+.RE1 p {
+  opacity: 0;
+  transition: 0.3s;
+
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE1:hover p {
+  opacity: 1;
+}
+.RE1:hover {
+  border: 0px;
+}
+.RE2 {
+  background-image: url(images/RE2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-72) / 4);
+  border: 4px solid rgb(250, 248, 248);
+  transition: 0.3s;
+}
+
+.RE2 p {
+  opacity: 0;
+  transition: 0.3s;
+
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE2:hover p {
+  opacity: 1;
+}
+.RE2:hover {
+  border: 0px;
+}
+
+.RE3 {
+  background-image: url(images/RE3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-72) / 4);
+  border: 4px solid rgb(253, 249, 249);
+  transition: 0.3s;
+}
+
+.RE3 p {
+  opacity: 0;
+  transition: 0.3s;
+
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE3:hover p {
+  opacity: 1;
+}
+.RE3:hover {
+  border: 0px;
+}
+.RE2_ET_3 {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.REV {
+  background-image: url(images/RE_veronica.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-72) / 4);
+  border: 4px solid rgb(247, 244, 244);
+  transition: 0.3s;
+}
+
+.REV p {
+  opacity: 0;
+  transition: 0.3s;
+
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.REV:hover p {
+  opacity: 1;
+}
+.REV:hover {
+  border: 0px;
+}
+
+.RE4 {
+  background-image: url(images/RE4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-80) / 3);
+  border: 4px solid rgb(250, 246, 246);
+  transition: 0.3s;
+}
+
+.RE4 p {
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE4:hover p {
+  opacity: 1;
+}
+.RE4:hover {
+  border: 0px;
+}
+
+.RE5 {
+  background-image: url(images/RE5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-80) / 3);
+  border: 4px solid rgb(250, 246, 246);
+  transition: 0.3s;
+}
+
+.RE5 p {
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE5:hover p {
+  opacity: 1;
+}
+.RE5:hover {
+  border: 0px;
+}
+
+.RE6 {
+  background-image: url(images/RE6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-80) / 3);
+  border: 4px solid rgb(255, 251, 251);
+  transition: 0.3s;
+}
+
+.RE6 p {
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE6:hover p {
+  opacity: 1;
+}
+.RE6:hover {
+  border: 0px;
+}
+.RE7 {
+  background-image: url(images/RE7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-72) / 4);
+  border: 4px solid rgb(248, 244, 244);
+  transition: 0.3s;
+}
+
+.RE7 p {
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE7:hover p {
+  opacity: 1;
+}
+.RE7:hover {
+  border: 0px;
+}
+.RE8 {
+  background-image: url(images/RE8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-72) / 4);
+  border: 4px solid rgb(243, 242, 242);
+  transition: 0.3s;
+}
+
+.RE8 p {
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE8:hover p {
+  opacity: 1;
+}
+.RE8:hover {
+  border: 0px;
+}
+.RE9 {
+  background-image: url(images/RE9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  border: 4px solid rgb(252, 248, 248);
+  width: calc((100%-72) / 4);
+  transition: 0.3s;
+}
+
+.RE9 p {
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.RE9:hover p {
+  opacity: 1;
+}
+.RE9:hover {
+  border: 0px;
+}
+
+.REDLC {
+  background-image: url(images/REDLC.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: calc((100%-72) / 4);
+  border: 4px solid rgb(250, 247, 247);
+  transition: 0.3s;
+}
+
+.REDLC p {
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.649);
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px black;
+  padding: 10px;
+}
+
+.REDLC:hover p {
+  opacity: 1;
+}
+.REDLC:hover {
+  border: 0px;
+}
